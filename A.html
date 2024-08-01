@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Web Layout</title>
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="MyGirl.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <div class="box box-top-left">
+            <img src="Img/Imagen1.jpg" alt="Imagen1">
+        </div>
+        <div class="text text-top-right">
+            <p class="justify-content-center">
+            !!!Lindo dia corazon¡¡¡<br>
+            No es la gran cosa, pero
+            espero que te guste jejej.
+            Intentemos nuevamente esto,
+            pero de una forma mas reciproca 
+            para ambos vale.</p>
+        </div>
+        <button class="button" onclick="playAudio()">Presiona</button>
+        <div class="text text-bottom-left">
+            <p>Te pido paciencia, esto
+            es nuevo para mi, aun sigo
+            aprendiendo, como te lo habia
+            mencionado antes, si algo
+            te molesta solo dilo si.</p>
+        </div>
+        <div class="box box-bottom-right">
+            <img src="Img/Imagen2.jpg" alt="Imagen2">
+        </div>
+        <p></p>
+        <div class="text text-bottom-right">
+            <p>Te quiero, y que tengas
+            un lindo dia.</p>
+        </div>
+    </div>
+    <script>
+        function playAudio() {
+            const audio = document.getElementById("myAudio");
+            audio.play();
+        }
+    </script>
+</body>
+</html>
